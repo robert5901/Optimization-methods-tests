@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Optimization methods tests</string>
+    <string name="title_admin_activity">admin_activity</string>
+    <string name="tab_text_1">Password generator</string>
+    <string name="tab_text_2">Results</string>
+    <string name="results_tab">Results tab</string>
+    <string name="password_generator">Password generator</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_row_activity" />
+    <string name="title_RegForm" />
+    <string name="title_TestCreating" />
+    <string name="title_ChangeTest" />
+</resources>

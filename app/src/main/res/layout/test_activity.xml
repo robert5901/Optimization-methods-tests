@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCounter"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:inputType="textNoSuggestions"
+                android:maxLines="10"
+                android:textColor="#f0f0f0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:textColor="#f0f0f0"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioButton
+                    android:id="@+id/firstRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:text="1 вариант"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/secondRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+
+                    android:text="2 вариант"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/thirdRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+
+                    android:text="3 вариант"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/fourthRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+
+                    android:text="4 вариант"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_margin="8dp"
+            android:text="Следующий вопрос"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            app:cornerRadius="20dp"
+            app:layout_anchor="@+id/constraintLayout2"
+            app:layout_anchorGravity="top|center"
+            app:layout_constraintBottom_toTopOf="@+id/saveResults"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_gravity="start"
+            android:layout_margin="8dp"
+            android:text="Выход"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveResults"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:text="Сохранить и закончить"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
